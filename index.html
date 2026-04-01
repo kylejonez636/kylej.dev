@@ -4,8 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Jones</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Kyle Jones</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kyle Jones</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Future links -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container py-4">
+
+        <!-- Header -->
+        <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-3 mb-3">
+                <img src="images/profilepic.jpeg" alt="Profile Picture" class="profile-img">
+            </div>
+
+            <div class="col-md-9">
+                <h1>Kyle Jones</h1>
+                <p class="mb-1">Orem, UT</p>
+                <p class="mb-1"><a href="tel:+18018159970">(801) 815-9970</a></p>
+                <p class="mb-1"><a href="mailto:kylejonez636@gmail.com">kylejonez636@gmail.com</a></p>
+                <p>
+                    <a href="https://www.linkedin.com/in/kyle-jones-78725b244" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/kylejonez636" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <section>
+            <h3 class="section-title">Skills</h3>
+            <p>
+                Hard-working, self-motivated computer science graduate. Able to work independently with minimal supervision.
+            </p>
+            <p>
+                Node.js, JavaScript/TypeScript, Angular, React, Cypress, Express, C#, .NET, SQL, Git, Jira, Axe DevTools
+            </p>
+            <p>
+                Strong written communication skills and attention to detail.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h3 class="section-title">Experience</h3>
+
+            <div class="mb-3">
+                <h5>Software Engineer Intern</h5>
+                <p class="mb-1"><strong>Konexus Inc</strong> | May 2024 - Present</p>
+
+                <ul>
+                    <li>Contribute production-ready frontend and backend code using Angular and C#/.NET REST APIs</li>
+                    <li>Led Angular framework upgrades (v17 → v21), including Angular Material MDC migration</li>
+                    <li>Led accessibility improvements using ARIA, keyboard navigation, and Axe DevTools</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <h5>Software Testing Intern</h5>
+                <p class="mb-1"><strong>Konexus Inc</strong> | Jul 2022 - May 2024</p>
+
+                <ul>
+                    <li>Performed manual testing of frontend applications</li>
+                    <li>Created detailed bug reports in Jira</li>
+                    <li>Recognized for strong defect identification and thorough testing</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <h5>Warehouse Associate</h5>
+                <p class="mb-1"><strong>Amazon</strong> | May 2021 - Aug 2021</p>
+
+                <ul>
+                    <li>Sorted packages for shipping</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <h5>Thrift Store Associate</h5>
+                <p class="mb-1"><strong>Deseret Industries</strong> | Jul 2020 - Aug 2020</p>
+
+                <ul>
+                    <li>Sorted donated items for retail</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h3 class="section-title">Education</h3>
+            <p><strong>BS in Computer Science</strong> - Utah Valley University (May 2025)</p>
+            <p><strong>Associate of Science</strong> - Utah Valley University (May 2022)</p>
+        </section>
+
+        <!-- Awards -->
+        <section>
+            <h3 class="section-title">Awards</h3>
+            <ul>
+                <li>Eagle Scout</li>
+                <li>High School Sterling Scholar in Mathematics</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h3 class="section-title">Projects</h3>
+            <p>
+                Senior Capstone: 
+                <a href="https://nextlevelchat.onrender.com" target="_blank">Next Level Chat</a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <small>
+                &copy; <span id="footer-year"></span> Kyle Jones. All rights reserved.
+            </small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
